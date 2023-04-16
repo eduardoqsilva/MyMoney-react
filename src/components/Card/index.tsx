@@ -1,9 +1,10 @@
 import { ArrowCircleUp, Coins } from "@phosphor-icons/react";
+import { Format } from "../../constants/format";
 import { CardStyled } from "./card.styled";
 
 
 interface CardType {
-  value: string
+  value: number
   positive?: boolean
   variation?: '01' | '02'
   legend: string
@@ -15,7 +16,7 @@ export function Card({ value, positive = true, variation = '01', legend }:CardTy
         <span>{legend}</span>
         { variation === '01' ? <ArrowCircleUp size={32}/> : <Coins size={32}/>} 
       </div>
-      <h2>R$ {value}</h2>
+      <h2>{Format.format(value)}</h2>
     </CardStyled>
   )
 }
