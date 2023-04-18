@@ -52,4 +52,8 @@ export const SearchButton = styled.button`
   &:active {
     transform: scale(0.95);
   }
+
+  @media (max-width: 580px) {
+    padding: 0.6rem 0.4rem;
+  }
 `

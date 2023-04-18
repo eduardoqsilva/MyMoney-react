@@ -18,15 +18,26 @@ export const ItemWrapperStyled = styled.div`
   font-size: 1rem;
   line-height: 160%;
   color: #C4C4CC;
+
+  @media (max-width: 580px) {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5rem
+  }
 `
 export const TextTitleStyled = styled.span`
-
+  @media (max-width: 580px) {
+    grid-column: span 2;
+  }
 `
 interface ValueType {
   positive: boolean
 }
 export const ValueStyled = styled.span<ValueType>`
   color: ${(props) => props.positive? '#00B37E' : '#F75A68'};
+  @media (max-width: 580px) {
+    grid-column: span 2;
+  }
 `
 export const TagStyled = styled.span`
   display: flex;

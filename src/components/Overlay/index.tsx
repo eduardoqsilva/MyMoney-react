@@ -25,7 +25,7 @@ export function Overlay({show, setShow, setList}:TypeOverlay) {
       document.body.style.overflowY = 'hidden'
     } else{
       document.body.style.height = '100%'
-      document.body.style.overflowY = 'scroll'
+      document.body.style.overflowY = ''
     }
   }, [show])
 
