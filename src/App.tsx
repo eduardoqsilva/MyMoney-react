@@ -1,6 +1,9 @@
+import { Transactions } from "./pages/Transactions"
+
+
 function App() {
   return (
-    <h1>Hello</h1>
+    <Transactions />
   )
 }
 
