@@ -29,6 +29,9 @@ export const SearchInput = styled.input`
   &::placeholder {
     color: #7C7C8A;
   }
+  @media (max-width: 580px) {
+    width: 100%;
+  }
 `
 export const SearchButton = styled.button`
   padding: 0.875rem 2rem;
