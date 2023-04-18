@@ -11,4 +11,5 @@ export const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  transition: all 0.2s ease-in;
 `
