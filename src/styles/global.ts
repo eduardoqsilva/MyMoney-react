@@ -10,4 +10,8 @@ export const GlobalStyled = createGlobalStyle`
   body {
     background-color: #202024;
   }
+
+  button {
+    cursor: pointer;
+  }
 `
