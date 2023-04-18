@@ -6,4 +6,8 @@ export const GlobalStyled = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
+
+  body {
+    background-color: #202024;
+  }
 `

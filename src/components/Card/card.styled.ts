@@ -7,6 +7,7 @@ interface CardStyledType {
 
 export const CardStyled = styled.div<CardStyledType>`
   width: 100%;
+  min-width: 250px;
   height: 137px;
   border-radius: 6px;
   padding: 24px;

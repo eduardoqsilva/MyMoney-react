@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const SearchWrapperStyled = styled.div`
   display: flex;
   gap: 1rem;
+  
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  margin-top: 2rem;
 `
 export const SearchInput = styled.input`
   background: #121214;
