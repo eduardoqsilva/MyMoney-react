@@ -9,13 +9,14 @@ interface ItemType {
   date: string
 }
 export function Item({title, value, tag, date}:ItemType) {
+  const positive = value < 0 ? false : true
 
   return (
     <ItemWrapperStyled>
       <TextTitleStyled>
         {title}
       </TextTitleStyled>
-      <ValueStyled positive={true}>
+      <ValueStyled positive={positive}>
         {Format.format(value)}
       </ValueStyled>
       <TagStyled>
